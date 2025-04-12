@@ -100,7 +100,7 @@ def fetch_news(query, experiment):
     
     json_str = df.to_json(orient='records')
 
-    with open(f"data/{query}-{datetime.date()}-{experiment}.json", "w") as f:
+    with open(f"data/{query}-{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}-{experiment}.json", "w") as f:
         f.write(json_str)
 
     return json_str
@@ -118,7 +118,7 @@ def create_prompt_1(query, news):
     query: Company Name
     news: News related to the Company
     """
-    prompt = f"""I will give you latest 10 news related to company {query}.
+    prompt = f"""I will give you latest 10 news related to the company: {query}.
     
     News:
     {news}
@@ -134,7 +134,154 @@ def create_prompt_1(query, news):
     
     return prompt
 
+def create_prompt_2(last_price, query, news):
+    """
+    # Create Prompt 2
+    - Zero shot prompting
+    - Simple JSON Response
+    - Normal text input format
+    - No persona given
+    - Company's previous performance not given
+    - Company's present last price is given
+    
+    query: Company Name
+    news: News related to the Company
+    """
+    prompt = f"""I will give you latest 10 news related to the company: {query}. The last price of {query} was {last_price}.
+    
+    News:
+    {news}
+    
+    
+    Now, based on these news you will give a prediction of how this company's stock market will perform tomorrow. Give the response in this JSON format:
+    
+    {{
+        "company_name": "Company Name",
+        "performance_at_closing_tomorrow": "Your predicted performance of the stock in percentage increase/decrease (Example: -0.5% or +1.2%)"
+    }}
+    """
+    
+    return prompt
+
+def create_prompt_3(last_price, query, news):
+    """
+    # Create Prompt 3
+    - Few shot prompting
+    - Simple JSON Response
+    - Normal text input format
+    - No persona given
+    - Company's previous performance not given
+    - Company's present last price is given
+    
+    query: Company Name
+    news: News related to the Company
+    """
+    prompt_1 = f"""I will give you latest 10 news related to the company: {query}. The last price of {query} was {last_price}.
+    
+    News:
+    {news}
+    """
+    
+    prompt_2 = f"""Now, based on these news you will give a prediction of how this company's stock market will perform tomorrow. Give the response in this JSON format:
+    
+    {{
+        "company_name": "Company Name",
+        "performance_at_closing_tomorrow": "Your predicted performance of the stock in percentage increase/decrease (Example: -0.5% or +1.2%)"
+    }}
+    """
+    
+    return prompt_1, prompt_2
+
+def create_prompt_4(last_price, query, news):
+    """
+    # Create Prompt 4
+    - Few shot prompting
+    - Simple JSON Response
+    - Normal text input format
+    - No persona given
+    - Company's previous performance not given
+    - Company's present last price is given
+    
+    query: Company Name
+    news: News related to the Company
+    """
+    prompt_1 = f"""I will give you latest 10 news related to the company: {query}. The last price of {query} was {last_price}.
+    """
+    
+    prompt_2 = f"""News:
+    {news}"""
+    
+    prompt_3 = f"""Now, based on these news you will give a prediction of how this company's stock market will perform tomorrow. Give the response in this JSON format:
+    
+    {{
+        "company_name": "Company Name",
+        "performance_at_closing_tomorrow": "Your predicted performance of the stock in percentage increase/decrease (Example: -0.5% or +1.2%)"
+    }}
+    """
+    
+    return prompt_1, prompt_2, prompt_3
+
+def create_prompt_5(last_price, query, news):
+    """
+    # Create Prompt 5
+    - Chain-of-Thought (CoT) prompting
+    - Simple JSON Response
+    - Normal text input format
+    - No persona given
+    - Company's previous performance not given
+    - Company's present last price is given
+    
+    query: Company Name
+    news: News related to the Company
+    """
+    prompt_1 = f"""I will give you latest 10 news related to the company: {query}. The last price of {query} was {last_price}.
+    
+    News:
+    {news}
+    
+    
+    Now, based on these news you will give a prediction of how this company's stock market will perform tomorrow. Give the response in this JSON format:
+    
+    {{
+        "company_name": "Company Name",
+        "performance_at_closing_tomorrow": "Your predicted performance of the stock in percentage increase/decrease (Example: -0.5% or +1.2%)"
+    }}
+    
+    **IMPORTANT**: You will think out loud. I.e., You will be following the Chain-of-Thought prompting technique. You will think about it in a chain making your thoughts visible.
+    """
+    
+    return prompt_1
+
+def create_prompt_6(last_price, query, news):
+    """
+    # Create Prompt 6
+    - Chain-of-Thought (CoT) prompting
+    - Simple JSON Response
+    - Normal text input format
+    - No persona given
+    - Company's previous performance not given
+    - Company's present last price is given
+    
+    query: Company Name
+    news: News related to the Company
+    """
+    prompt_1 = f"""I will give you latest 10 news related to the company: {query}. The last price of {query} was {last_price}.
+    
+    News:
+    {news}
+    
+    
+    Now, based on these news you will give a prediction of how this company's stock market will perform tomorrow. Give the response in this JSON format:
+    
+    {{
+        "company_name": "Company Name",
+        "performance_at_closing_tomorrow": "Your predicted performance of the stock in percentage increase/decrease (Example: -0.5% or +1.2%)"
+    }}
+    
+    **IMPORTANT**: You will think out loud. I.e., You will be following the Chain-of-Thought prompting technique. You will think about it in a chain making your thoughts visible.
+    """
+    
+    return prompt_1
+
 def ai_function_1(prompt):
     """System Prompt: No system prompts."""
-    
-    
