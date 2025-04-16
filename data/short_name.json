@@ -1,0 +1,345 @@
+[
+  {
+    "Company": "ADANIENT",
+    "Gemini": 2,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "ADANIPORTS",
+    "Gemini": 2,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "APOLLOHOSP",
+    "Gemini": 2,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "ASIANPAINT",
+    "Gemini": 0,
+    "SUTRA": -1,
+    "ChatGPT": 0,
+    "Grok": 1
+  },
+  {
+    "Company": "AXISBANK",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "BAJAJ-AUTO",
+    "Gemini": -1,
+    "SUTRA": -1,
+    "ChatGPT": 0,
+    "Grok": -1
+  },
+  {
+    "Company": "BAJFINANCE",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "BAJAJFINSV",
+    "Gemini": 1,
+    "SUTRA": 0,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "BHARTIARTL",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "BPCL",
+    "Gemini": 1,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "BRITANNIA",
+    "Gemini": 0,
+    "SUTRA": -1,
+    "ChatGPT": 0,
+    "Grok": 0
+  },
+  {
+    "Company": "CIPLA",
+    "Gemini": 2,
+    "SUTRA": 1,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "COALINDIA",
+    "Gemini": 0,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "DIVISLAB",
+    "Gemini": 1,
+    "SUTRA": -1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "DRREDDY",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 2,
+    "Grok": 0
+  },
+  {
+    "Company": "EICHERMOT",
+    "Gemini": 1,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "GRASIM",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "HCLTECH",
+    "Gemini": 1,
+    "SUTRA": 0,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "HDFCBANK",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "HDFCLIFE",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "HEROMOTOCO",
+    "Gemini": 0,
+    "SUTRA": 0,
+    "ChatGPT": 0,
+    "Grok": 0
+  },
+  {
+    "Company": "HINDALCO",
+    "Gemini": 0,
+    "SUTRA": 0,
+    "ChatGPT": 0,
+    "Grok": 0
+  },
+  {
+    "Company": "HINDUNILVR",
+    "Gemini": 0,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "ICICIBANK",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "INDUSINDBK",
+    "Gemini": -1,
+    "SUTRA": -1,
+    "ChatGPT": -1,
+    "Grok": -1
+  },
+  {
+    "Company": "INFY",
+    "Gemini": 0,
+    "SUTRA": -1,
+    "ChatGPT": -1,
+    "Grok": -1
+  },
+  {
+    "Company": "ITC",
+    "Gemini": 0,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "JSWSTEEL",
+    "Gemini": 1,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "KOTAKBANK",
+    "Gemini": 0,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "LT",
+    "Gemini": -2,
+    "SUTRA": 0,
+    "ChatGPT": 0,
+    "Grok": 0
+  },
+  {
+    "Company": "LTIM",
+    "Gemini": 0,
+    "SUTRA": -1,
+    "ChatGPT": 0,
+    "Grok": 0
+  },
+  {
+    "Company": "M&M",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 2,
+    "Grok": 0
+  },
+  {
+    "Company": "MARUTI",
+    "Gemini": 1,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "NESTLEIND",
+    "Gemini": 0,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "NTPC",
+    "Gemini": 1,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "ONGC",
+    "Gemini": 1,
+    "SUTRA": -1,
+    "ChatGPT": 0,
+    "Grok": -1
+  },
+  {
+    "Company": "POWERGRID",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "RELIANCE",
+    "Gemini": 2,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "SBILIFE",
+    "Gemini": 1,
+    "SUTRA": 0,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "SBIN",
+    "Gemini": 0,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "SUNPHARMA",
+    "Gemini": 2,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "TCS",
+    "Gemini": 0,
+    "SUTRA": -1,
+    "ChatGPT": 0,
+    "Grok": -1
+  },
+  {
+    "Company": "TATACONSUM",
+    "Gemini": 0,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "TATAMOTORS",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "TATASTEEL",
+    "Gemini": 1,
+    "SUTRA": 1,
+    "ChatGPT": 1,
+    "Grok": 1
+  },
+  {
+    "Company": "TECHM",
+    "Gemini": 0,
+    "SUTRA": -1,
+    "ChatGPT": 0,
+    "Grok": 0
+  },
+  {
+    "Company": "TITAN",
+    "Gemini": 2,
+    "SUTRA": 2,
+    "ChatGPT": 2,
+    "Grok": 1
+  },
+  {
+    "Company": "UPL",
+    "Gemini": 1,
+    "SUTRA": 0,
+    "ChatGPT": 1,
+    "Grok": 0
+  },
+  {
+    "Company": "WIPRO",
+    "Gemini": -1,
+    "SUTRA": -2,
+    "ChatGPT": -1,
+    "Grok": -1
+  }
+]

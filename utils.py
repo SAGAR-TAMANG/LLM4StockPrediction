@@ -1,10 +1,11 @@
-import time
-import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 from datetime import datetime
+import pandas as pd
+import time
+import openai
 
 def fetch_news(query, experiment):
     """
@@ -118,19 +119,18 @@ def create_prompt_1(query, news):
     query: Company Name
     news: News related to the Company
     """
-    prompt = f"""I will give you latest 10 news related to the company: {query}.
-    
-    News:
-    {news}
-    
-    
-    Now, based on these news you will give a prediction of how this company's stock market will perform tomorrow. Give the response in this JSON format:
-    
-    {{
-        "company_name": "Company Name",
-        "performance_at_closing_tomorrow": "Your predicted performance of the stock in percentage increase/decrease (Example: -0.5% or +1.2%)"
-    }}
-    """
+    prompt = f"""I will give you latest 10 news related to the company: {query}
+
+News:
+{news}
+
+
+Now, based on these news you will give a prediction of how this company's stock market will perform tomorrow. Give the response in this JSON format:
+
+{{
+    "company_name": "Company Name",
+    "rating": "Your predicted score among: -2, -1, 0, 1, 2 where -2 is Strong Sell, -1 is Moderate Sell, 0 is Hold, 1 is Moderate Buy, and 2 is Strong Buy."
+}}"""
     
     return prompt
 
@@ -283,5 +283,36 @@ def create_prompt_6(last_price, query, news):
     
     return prompt_1
 
-def ai_function_1(prompt):
-    """System Prompt: No system prompts."""
+
+client = openai.OpenAI()
+
+def get_openai_response(prompt: str, model: str = "gpt-4o") -> str:
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {
+                    "role": "user",
+                    "content": prompt
+                },
+            ],
+            response_format={"type": "json_object"},
+        )
+
+        response = response.choices[0].message.content
+        
+        # 1. Remove the starting fence
+        if response.startswith("```json"):
+            response = response[len("```json"):]
+
+        # 2. Remove the ending fence
+        if response.endswith("```"):
+            response = response[:-len("```")]
+
+        # Strip any extra whitespace
+        response = response.strip()
+        
+        return response
+    except Exception as e:
+        return f"Error: {e}"
