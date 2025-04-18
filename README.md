@@ -1,4 +1,4 @@
-<div style="background-color: white; color: black;">
+<div style="background-color: white;>
 
 # Stock Market Prediction using LLM
 ![image](./fig/workflow.png)
