@@ -1,4 +1,5 @@
 # Stock Market Prediction using LLM
+![image](./fig/workflow.png)
 - So, basically, the LLM will be able to predict the stock market, I want to find that out. 
 - The LLM will be predicting the stock market, so what else does it need as context? 
 1. News 
