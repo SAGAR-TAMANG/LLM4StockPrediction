@@ -1,5 +1,3 @@
-<div style="background-color: white;>
-
 # Stock Market Prediction using LLM
 ![image](./fig/workflow.png)
 - So, basically, the LLM will be able to predict the stock market, I want to find that out. 
@@ -34,5 +32,3 @@
 5. SUTRA, GPT-4o, Grok, Gemini
 6. JSON output
 7. English
-
-</div>
